@@ -6,124 +6,164 @@ A full-stack Task Manager application built with the MERN stack (MongoDB, Expres
 
 ## 🌐 Live Demo
 
-The application is fully deployed and live!
-
 | Component | URL |
 |-----------|-----|
-| **Frontend Application** | [https://mern-stack-task-manager-app.vercel.app](https://mern-stack-task-manager-app.vercel.app) |
+| **Frontend** | [https://mern-stack-task-manager-app.vercel.app](https://mern-stack-task-manager-app.vercel.app) |
 | **Backend API** | [https://task-manager-backend-wm5h.onrender.com](https://task-manager-backend-wm5h.onrender.com) |
-| **GitHub Repository** | [https://github.com/Mamta-gangwar/MERN-Stack-Task-Manager-App](https://github.com/Mamta-gangwar/MERN-Stack-Task-Manager-App) |
-
-<p align="center">
-  <a href="https://mern-stack-task-manager-app.vercel.app">
-    <img src="https://img.shields.io/badge/Deployed%20on-Vercel-black?style=for-the-badge&logo=vercel" alt="Vercel">
-  </a>
-  <a href="https://task-manager-backend-wm5h.onrender.com">
-    <img src="https://img.shields.io/badge/Deployed%20on-Render-blue?style=for-the-badge&logo=render" alt="Render">
-  </a>
-</p>
+| **GitHub** | [https://github.com/Mamta-gangwar/MERN-Stack-Task-Manager-App](https://github.com/Mamta-gangwar/MERN-Stack-Task-Manager-App) |
 
 ---
 
 ## ✨ Features
 
-| Feature | Description |
-|---------|-------------|
-| ✅ **User Authentication** | Local, Google, and Facebook login with Passport.js |
-| ✅ **Task Management** | Create, edit, delete, and track your daily tasks |
-| ✅ **Notes** | Save and organize your important notes |
-| ✅ **Todo Lists** | Create and manage todos with checkboxes |
-| ✅ **Calendar View** | See all your tasks and events in an interactive calendar |
-| ✅ **Dark Mode** | Toggle between light and dark themes |
-| ✅ **Password Reset** | Forgot password functionality with email integration |
-| ✅ **User Profile** | View and manage your personal profile |
+- ✅ User Authentication (Local, Google, Facebook)
+- ✅ Task Management (Create, Edit, Delete, Track)
+- ✅ Notes (Save and organize notes)
+- ✅ Todo Lists (Create and manage todos)
+- ✅ Calendar View (Interactive calendar)
+- ✅ Dark Mode (Light/Dark theme toggle)
+- ✅ Password Reset (Email integration)
+- ✅ User Profile (View and manage profile)
 
 ---
 
 ## 🛠️ Tech Stack
 
 **Frontend:**
-- ⚛️ React.js
-- 🚦 React Router
-- 🎨 CSS3
-- 🚀 Deployed on Vercel
+- React.js
+- React Router
+- CSS3
+- Deployed on Vercel
 
 **Backend:**
-- 🟢 Node.js
-- 🚂 Express.js
-- 🍃 MongoDB Atlas
-- 🔐 Passport.js (Authentication)
-- 📧 Nodemailer (Email service)
-- ⚙️ Deployed on Render
+- Node.js
+- Express.js
+- MongoDB Atlas
+- Passport.js (Authentication)
+- Nodemailer (Email)
+- Deployed on Render
 
----
 
 ## 🚀 Quick Start
 
-### **Visit the Live App**
-Simply go to: **[https://mern-stack-task-manager-app.vercel.app](https://mern-stack-task-manager-app.vercel.app)**
+### Visit Live App
+Go to: **https://mern-stack-task-manager-app.vercel.app**
 
-1. Create a new account
-2. Or login with Google/Facebook
-3. Start managing your tasks!
+### Run Locally
 
-### **Run Locally**
-
-# Clone the repository
+**Step 1: Clone the repository**
 git clone https://github.com/Mamta-gangwar/MERN-Stack-Task-Manager-App.git
 cd MERN-Stack-Task-Manager-App
 
-# Install backend dependencies
+text
+
+**Step 2: Setup Backend**
 cd BackEnd
 npm install
 
-# Create .env file in BackEnd folder
-# Add these variables:
-# MONGO_URL=your_mongodb_connection_string
-# SESSION_SECRET=your_secret
-# JWT_SECRET_KEY=your_jwt_secret
-# FRONTEND_DOMAIN=http://localhost:3000
+text
 
-# Start backend server
+Create `.env` file in BackEnd folder:
+MONGO_URL=your_mongodb_connection_string
+SESSION_SECRET=your_secret
+JWT_SECRET_KEY=your_jwt_secret
+FRONTEND_DOMAIN=http://localhost:3000
+
+text
+
+Start backend:
 npm start
 
-# In a new terminal, install and start frontend
+text
+
+**Step 3: Setup Frontend** (Open new terminal)
 cd FrontEnd
 npm install
 npm start
 
-## 📸 **Screenshots**
+text
 
-Here are some screenshots of the Task Manager application:
+**Access your app:**
+- Frontend: http://localhost:3000
+- Backend: http://localhost:8080
 
-| **Login Page** | **Dashboard View 1** | **Tasks View** |
-|:--------------:|:--------------------:|:--------------:|
-| <img src="images/Login.png" width="300"> | <img src="images/Dashboard1.png" width="300"> | <img src="images/Tasks.png" width="300"> |
+---
 
-| **Notes Page** | **Dashboard View 2** | **Login Page (Alt)** |
-|:--------------:|:--------------------:|:--------------------:|
-| <img src="images/Notes.png" width="300"> | <img src="images/Dashboard2.png" width="300"> | <img src="images/Login.png" width="300"> |
+## 📸 Screenshots
 
+| Login Page | Dashboard | Tasks |
+|:----------:|:---------:|:-----:|
+| <img src="images/Login.png" width="500"> | <img src="images/Dashboard1.png" width="500"> | <img src="images/Tasks.png" width="500"> |
+
+| Notes | Dashboard View 2 | Features |
+|:-----:|:----------------:|:--------:|
+| <img src="images/Notes.png" width="500"> | <img src="images/Dashboard2.png" width="500"> | <img src="images/Login.png" width="500"> |
+
+---
+
+## 📁 Project Structure
 MERN-Stack-Task-Manager-App/
-├── BackEnd/               # Node.js/Express backend
-│   ├── Models/            # Database models
-│   ├── Routes/            # API routes
-│   ├── index.js           # Main server file
-│   └── package.json
-├── FrontEnd/              # React frontend
-│   ├── public/            # Static files
-│   ├── src/               # React components
-│   │   ├── components/    # All React components
-│   │   ├── App.js
-│   │   └── index.js
-│   └── package.json
+│
+├── BackEnd/
+│ ├── Models/
+│ ├── Routes/
+│ ├── index.js
+│ └── package.json
+│
+├── FrontEnd/
+│ ├── public/
+│ ├── src/
+│ │ ├── components/
+│ │ ├── App.js
+│ │ └── index.js
+│ └── package.json
+│
+├── images/
+│ ├── Login.png
+│ ├── Dashboard1.png
+│ ├── Dashboard2.png
+│ ├── Tasks.png
+│ └── Notes.png
+│
 └── README.md
 
-📞 Contact
-Mamta Gangwar
+text
 
-GitHub: @Mamta-gangwar
+---
 
-Project Link: https://github.com/Mamta-gangwar/MERN-Stack-Task-Manager-App
+## 🔄 How It Works
+User → Frontend (React) → API Call → Backend (Node.js) → Database (MongoDB)
+↑ │
+└────────────────── Response ────────────────────────────┘
 
-<p align="center"> Made with ❤️ by Mamta Gangwar <br> ⭐ If you found this project helpful, please give it a star! </p>
+text
+
+---
+
+## 🔧 Environment Variables
+
+**Backend (.env file)**
+MONGO_URL=your_mongodb_connection_string
+SESSION_SECRET=your_session_secret
+JWT_SECRET_KEY=your_jwt_secret
+FRONTEND_DOMAIN=http://localhost:3000
+
+text
+
+**Frontend (.env file)**
+REACT_APP_API_URL=http://localhost:8080
+
+text
+
+---
+
+## 📞 Contact
+
+**Mamta Gangwar**
+
+- GitHub: [@Mamta-gangwar](https://github.com/Mamta-gangwar)
+- Project Link: [https://github.com/Mamta-gangwar/MERN-Stack-Task-Manager-App](https://github.com/Mamta-gangwar/MERN-Stack-Task-Manager-App)
+
+---
+
+⭐ **If you like this project, please give it a star on GitHub!**
