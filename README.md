@@ -1,156 +1,117 @@
+# MERN Stack Task Manager App
 
-# TASK MANAGER - MERN 
+A full-stack Task Manager application built with the MERN stack (MongoDB, Express.js, React, Node.js). Features user authentication, task management, notes, todos, and calendar integration.
 
- The task manager app is a versatile productivity tool that combines task management, to-do lists, and note-taking functionalities. Users can efficiently organize, prioritize, and track their tasks, create to-do lists for better task categorization, and take notes for important information. The user-friendly interface, synchronization across devices, reminders, and optional collaboration features make it a comprehensive solution for streamlined productivity.
+# 🌐 Live Demo
 
-# Intrtoduction
+The application is fully deployed and live!
 
- Welcome to our Task Manager App – your all-in-one solution for efficient task management, seamless to-do list organization, and convenient note-taking. This application is designed to enhance your productivity by providing a unified platform for managing your daily activities. Whether you're an individual striving for personal organization or part of a collaborative team, our app is here to simplify your workflow.
-# Features
-# Task Management :
+| Component | URL |
+|-----------|-----|
+| **Frontend Application** | [https://mern-stack-task-manager-app.vercel.app](https://mern-stack-task-manager-app.vercel.app) |
+| **Backend API** | [https://task-manager-backend-wm5h.onrender.com](https://task-manager-backend-wm5h.onrender.com) |
+| **GitHub Repository** | [https://github.com/Mamta-gangwar/MERN-Stack-Task-Manager-App](https://github.com/Mamta-gangwar/MERN-Stack-Task-Manager-App) |
 
-Create, edit, and delete tasks with ease.
+[![Deployed on Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black)](https://mern-stack-task-manager-app.vercel.app)
+[![Deployed on Render](https://img.shields.io/badge/Deployed%20on-Render-blue)](https://task-manager-backend-wm5h.onrender.com)
 
-Specify due dates, priorities, and track task status effortlessly.
+# ✨ Features
 
-Categorize and filter tasks for a customized and organized view.
+- ✅ **User Authentication** - Local, Google, and Facebook login
+- ✅ **Task Management** - Create, edit, delete, and track tasks
+- ✅ **Notes** - Save and organize your notes
+- ✅ **Todo Lists** - Create and manage todos
+- ✅ **Calendar View** - See your tasks and events in calendar
+- ✅ **Dark Mode** - Toggle between light and dark themes
+- ✅ **Password Reset** - Forgot password functionality with email
+- ✅ **User Profile** - View and manage your profile
 
-Get notify through the app on bell icon
+# 🛠️ Tech Stack
 
-# To-Do :
+**Frontend:**
+- React.js
+- React Router
+- CSS3
+- Deployed on Vercel
 
-Create lists to organize tasks based on projects, categories, or any criteria.
+**Backend:**
+- Node.js
+- Express.js
+- MongoDB Atlas
+- Passport.js (Authentication)
+- Nodemailer (Email service)
+- Deployed on Render
 
-Break down tasks into manageable sections for focused execution.
+# 🚀 Quick Start
 
-# Notes - Functionality :
+# Visit the Live App
+**Simply go to:** [https://mern-stack-task-manager-app.vercel.app](https://mern-stack-task-manager-app.vercel.app)
+**Frontend:** [https://mern-stack-task-manager-app.vercel.app](https://mern-stack-task-manager-app.vercel.app) 
+**Backend:** [https://task-manager-backend-wm5h.onrender.com](https://task-manager-backend-wm5h.onrender.com) 
 
-Capture ideas, thoughts, and important information effortlessly.
 
-Edit and organize notes with rich text formatting and multimedia attachments.
+- Create a new account
+- Or login with Google/Facebook
+- Start managing your tasks!
 
-# DEMO
-## Login Page
-![Screenshot (55)](https://github.com/John12356/Task-Manager--First-MERN/assets/91779049/e6c16d98-9342-4d37-b17c-7035fcbd77dd)
-## Home Page
-![Screenshot (65)](https://github.com/John12356/Task-Manager--First-MERN/assets/91779049/d9e4fc89-d1ad-4604-b610-6842e5e71b48)
-## To-Do Page
-![Screenshot (61)](https://github.com/John12356/Task-Manager--First-MERN/assets/91779049/45f2bb36-08db-4e4e-9c6d-ea84845469b1)
-## Task Page
-![Screenshot (62)](https://github.com/John12356/Task-Manager--First-MERN/assets/91779049/0ac74f42-3851-4102-a2f9-ee609ded1eba)
-## Notes Page
-![Screenshot (63)](https://github.com/John12356/Task-Manager--First-MERN/assets/91779049/a5726406-2b8b-445b-8ee9-01bd1e64d79c)
-## Dark - Mode
-![Screenshot (64)](https://github.com/John12356/Task-Manager--First-MERN/assets/91779049/30f8cd99-c136-4721-b552-6a146827ed88)
-
-## Technologies Used
-
-- **Frontend:**
-  - [HTML5](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5)
-  - [CSS3](https://developer.mozilla.org/en-US/docs/Web/CSS)
-  - [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
-  - [React.js](https://reactjs.org/)
-
-- **Backend:**
-  - [Node.js](https://nodejs.org/)
-  - [Express](https://expressjs.com/)
-
-- **Database:**
-  - [MongoDB](https://www.mongodb.com/)
-
-- **Other Tools:**
-  - [Git](https://git-scm.com/)
-  - [GitHub](https://github.com/)
-  - [VSCode](https://code.visualstudio.com/)
-    
-# Getting Started
-## Prerequisites
-
-Before you begin, ensure you have met the following requirements:
-
-- [Node.js](https://nodejs.org/) (v16 or higher)
-- [npm](https://www.npmjs.com/) (comes with Node.js; npm v6.14.6 or higher recommended)
-- [MongoDB](https://www.mongodb.com/) (v4.0 or higher)
-- [Your preferred web browser](https://www.google.com/chrome/)
-
-> Note: Make sure to install the specified versions or higher to avoid compatibility issues.
-
-To check if you have Node.js and npm installed, run the following commands in your terminal:
+# Run Locally
 
 ```bash
-node --version
-npm --version
-```
-## How To Run
-Create the file `BackEnd/config.env` with your Atlas URI and the server port:
+# Clone the repository
+git clone https://github.com/Mamta-gangwar/MERN-Stack-Task-Manager-App.git
+cd MERN-Stack-Task-Manager-App
 
-**FrontEnd**
-```
-REACT_APP_API_URL = your backend api with port
-```
-**BackEnd**
-```
-MONGO_URL = your mongoDb url either from atlas or from localhost shell
-```
-If you are going Authenticate with Facebook and Google Through PassportJs Stratgy...
-```
-GOOGLE_CLIENT_ID = your google app clint id
-GOOGLE_CLIENT_SECRET = your google app client secret
-FACEBOOK_CLIENT_ID = your facebook app clint id
-FACEBOOK_CLIENT_SECRET = your facebook app client secret
-FRONTEND_DOMAIN = you react app url with port
-SESSION_SECRET = anything you want
-JWT_SECRET_KEY = anything you want
-```
-Start server i.e., BackEnd:
-```
-cd Task-Manager--First-MERN/BackEnd
+# Install backend dependencies
+cd BackEnd
+npm install
+
+# Create .env file in BackEnd folder with:
+# MONGO_URL=your_mongodb_connection_string
+# SESSION_SECRET=your_secret
+# JWT_SECRET_KEY=your_jwt_secret
+# FRONTEND_DOMAIN=http://localhost:3000
+
+# Start backend server
+npm start
+
+# In a new terminal, install and start frontend
+cd FrontEnd
 npm install
 npm start
-```
-Start Client i.e., FrontEnd:
-```
-cd Task-Manager--First-MERN/FrontEnd
-npm install
-npm start or npm run dev
-```
-## Disclaimer
-Use at your own risk; not a supported MongoDB product
-
-# Contributing
-We appreciate your interest in contributing to our project! Whether you're a developer, designer, or enthusiast, we welcome your contributions. This guide outlines the process and guidelines for making your contributions.
-## Getting Started
-
-1. Fork the repository.
-2. Clone your forked repository:
- ```bash
-   git clone https://github.com/john12356/Task-Manager--First-MERN.git
-```
-## Issues and Bug Reports
-
-- For bug reports, include details such as the operating system, browser version, and steps to reproduce the issue.
-- Check for existing issues before opening a new one.
-- Clearly describe the problem and provide any relevant error messages.
-- Include screenshots or code snippets if they help explain the issue.
-
-# License
-## License
-
-This project is licensed under the [MIT License](LICENSE). See the [LICENSE](LICENSE) file for details.
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-  
-# Acknowledgments
-
-We greatly appreciate all contributions to this project. Contributors will be acknowledged in our [CONTRIBUTORS.md](CONTRIBUTORS.md) file. Thank you for your support!
-## Feedback
-
-For any queries and improvements please reach out to johnmoorthi85131@gmail.com
-
-# Thank You
-
-We appreciate your interest in our project and hope that you find it useful. Your contributions and adherence to the project's license are valuable to us.
 
 
+## 📸 **Screenshots**
 
+| **Login Page** | **Dashboard** | **Tasks View** |
+|:--------------:|:-------------:|:--------------:|
+| <img src="images/Login.png" width="300"> | <img src="images/Dashboard1.png" width="300"> | <img src="images/Tasks.png" width="300"> |
+
+| **Notes** | **Dashboard (Alt View)** | **Additional View** |
+|:---------:|:------------------------:|:-------------------:|
+| <img src="images/Notes.png" width="300"> | <img src="images/Dashboard2.png" width="300"> | <img src="images/Login.png" width="300"> |
+
+
+# **Project Structure**
+
+MERN-Stack-Task-Manager-App/
+├── BackEnd/               # Node.js/Express backend
+│   ├── Models/            # Database models
+│   ├── Routes/            # API routes
+│   ├── index.js           # Main server file
+│   └── package.json
+├── FrontEnd/              # React frontend
+│   ├── public/            # Static files
+│   ├── src/               # React components
+│   │   ├── components/    # All React components
+│   │   ├── App.js
+│   │   └── index.js
+│   └── package.json
+└── README.md
+
+
+# 📞 **Contact**
+Mamta Gangwar
+GitHub: @Mamta-gangwar
+Project Link: https://github.com/Mamta-gangwar/MERN-Stack-Task-Manager-App
 
 
