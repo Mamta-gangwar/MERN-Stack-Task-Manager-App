@@ -53,17 +53,24 @@ text
 
 ## 📸 Screenshots
 
-| Login Page | Dashboard View | Tasks View |
-|:----------:|:--------------:|:----------:|
+| Login Page |
 | <img src="images/Login.png" width="1000"> |
+
+ |Dashboard View |
  <img src="images/Dashboard1.png" width="1000"> |
+
+ | Tasks View |
   <img src="images/Tasks.png" width="1000"> |
 
-| Notes Page | Dashboard View 2 | Features |
-|:---------:|:----------------:|:--------:|
+| Notes Page | 
+
 | <img src="images/Notes.png" width="1000"> |
+
+| Dashboard View 2 | 
  <img src="images/Dashboard2.png" width="1000"> |
-  <img src="images/Login.png" width="1000"> |
+
+ | Features |
+ <img src="images/Login.png" width="1000"> |
 
 
 ## 🚀 Quick Start
@@ -96,8 +103,8 @@ cd FrontEnd
 npm install
 
 # 6. Create .env file in FrontEnd folder
-# Add this variable:
-# REACT_APP_API_URL=http://localhost:8080
+Add this variable:
+REACT_APP_API_URL=http://localhost:8080
 
 # 7. Start Frontend Server
 npm start
@@ -106,235 +113,6 @@ Access your local app:
 Frontend: http://localhost:3000
 
 Backend: http://localhost:8080
-
-📁 Project Structure
-
-MERN-Stack-Task-Manager-App/
-│
-├── 📂 BackEnd/
-│   ├── 📂 Models/               # Database schemas
-│   │   ├── Model.js             # User model
-│   │   └── DataModel.js         # Tasks/Notes/Todos models
-│   ├── 📂 Routes/                # API routes
-│   │   ├── TaskRoutes.js
-│   │   ├── NoteRoutes.js
-│   │   └── TodoRoutes.js
-│   ├── 📄 index.js               # Main server file
-│   ├── 📄 passport.js            # OAuth configuration
-│   └── 📄 package.json
-│
-├── 📂 FrontEnd/
-│   ├── 📂 public/                 # Static files
-│   ├── 📂 src/
-│   │   ├── 📂 components/         # React components
-│   │   │   ├── 📂 Calendar/
-│   │   │   ├── 📂 DarkMode/
-│   │   │   ├── 📂 Dashboard/
-│   │   │   └── ...
-│   │   ├── 📄 App.js
-│   │   └── 📄 index.js
-│   └── 📄 package.json
-│
-├── 📂 images/                      # Screenshots
-│   ├── Login.png
-│   ├── Dashboard1.png
-│   ├── Dashboard2.png
-│   ├── Tasks.png
-│   └── Notes.png
-│
-└── 📄 README.md
-
-
-🔄 Application Flow
-
-High-Level Architecture
-
-┌─────────────────────────────────────────────────────────────┐
-│                      CLIENT SIDE                             │
-│  ┌─────────────────────────────────────────────────────┐    │
-│  │                 React Frontend                       │    │
-│  │  ┌─────────────┐ ┌─────────────┐ ┌─────────────┐   │    │
-│  │  │   Login/    │ │  Dashboard  │ │  Tasks/     │   │    │
-│  │  │  Register   │ │             │ │  Notes/Todos │   │    │
-│  │  └─────────────┘ └─────────────┘ └─────────────┘   │    │
-│  │                    │                                │    │
-│  │              HTTP Requests (API Calls)              │    │
-│  └────────────────────┬────────────────────────────────┘    │
-└───────────────────────┼─────────────────────────────────────┘
-                        │
-                        ▼
-┌─────────────────────────────────────────────────────────────┐
-│                      SERVER SIDE                             │
-│  ┌─────────────────────────────────────────────────────┐    │
-│  │              Express.js Backend                      │    │
-│  │  ┌─────────────┐ ┌─────────────┐ ┌─────────────┐   │    │
-│  │  │   Routes    │ │ Controllers │ │  Models     │   │    │
-│  │  │  /api/auth  │ │ Business    │ │  Database   │   │    │
-│  │  │  /api/tasks │ │ Logic       │ │  Schema     │   │    │
-│  │  │  /api/notes │ │ Validation  │ │             │   │    │
-│  │  └─────────────┘ └─────────────┘ └─────────────┘   │    │
-│  │                    │                                │    │
-│  │              Database Queries                        │    │
-│  └────────────────────┬────────────────────────────────┘    │
-└───────────────────────┼─────────────────────────────────────┘
-                        │
-                        ▼
-┌─────────────────────────────────────────────────────────────┐
-│                      DATABASE LAYER                          │
-│  ┌─────────────────────────────────────────────────────┐    │
-│  │              MongoDB Atlas                           │    │
-│  │  ┌─────────────┐ ┌─────────────┐ ┌─────────────┐   │    │
-│  │  │   Users     │ │   Tasks     │ │   Notes     │   │    │
-│  │  │  Collection │ │  Collection │ │  Collection │   │    │
-│  │  └─────────────┘ └─────────────┘ └─────────────┘   │    │
-│  │  ┌─────────────┐                                   │    │
-│  │  │   Todos     │                                   │    │
-│  │  │  Collection │                                   │    │
-│  │  └─────────────┘                                   │    │
-│  └─────────────────────────────────────────────────────┘    │
-└─────────────────────────────────────────────────────────────┘
-
-
-Detailed Request-Response Flow
-
-User Action (Click Button)
-         │
-         ▼
-┌─────────────────────────┐
-│  React Component        │
-│  (FrontEnd)             │
-│  ┌───────────────────┐  │
-│  │ Event Handler     │  │
-│  │ fetch() / axios   │  │
-│  └───────────────────┘  │
-└───────────┬─────────────┘
-            │ API Request (GET/POST/PUT/DELETE)
-            │ JSON Data
-            ▼
-┌─────────────────────────┐
-│  Express Route          │
-│  (BackEnd)              │
-│  ┌───────────────────┐  │
-│  │ app.get('/api/')  │  │
-│  │ app.post('/api/') │  │
-│  └───────────────────┘  │
-└───────────┬─────────────┘
-            │
-            ▼
-┌─────────────────────────┐
-│  Controller Function    │
-│  (Business Logic)       │
-│  ┌───────────────────┐  │
-│  │ Validation        │  │
-│  │ Error Handling    │  │
-│  │ Data Processing   │  │
-│  └───────────────────┘  │
-└───────────┬─────────────┘
-            │
-            ▼
-┌─────────────────────────┐
-│  MongoDB Model          │
-│  (Database Query)       │
-│  ┌───────────────────┐  │
-│  │ find()            │  │
-│  │ save()            │  │
-│  │ updateOne()       │  │
-│  │ deleteOne()       │  │
-│  └───────────────────┘  │
-└───────────┬─────────────┘
-            │
-            ▼
-┌─────────────────────────┐
-│  MongoDB Atlas          │
-│  (Database)             │
-│  ┌───────────────────┐  │
-│  │ Data Storage      │  │
-│  │ CRUD Operations   │  │
-│  └───────────────────┘  │
-└───────────┬─────────────┘
-            │
-            ▼
-┌─────────────────────────┐
-│  Response (JSON Data)   │
-│  ┌───────────────────┐  │
-│  │ Success/Error     │  │
-│  │ Requested Data    │  │
-│  │ Status Code       │  │
-│  └───────────────────┘  │
-└───────────┬─────────────┘
-            │
-            ▼
-┌─────────────────────────┐
-│  React Component        │
-│  (Update UI)            │
-│  ┌───────────────────┐  │
-│  │ setState()        │  │
-│  │ Re-render         │  │
-│  │ Display Data      │  │
-│  └───────────────────┘  │
-└─────────────────────────┘
-
-
-📊 API Flowchart
-
-                    ┌─────────────────┐
-                    │  Client Browser │
-                    └────────┬────────┘
-                             │
-        ┌────────────────────┼────────────────────┐
-        │                    │                    │
-        ▼                    ▼                    ▼
-┌───────────────┐    ┌───────────────┐    ┌───────────────┐
-│  GET Request  │    │  POST Request │    │ PUT/DELETE    │
-│  /api/tasks   │    │  /api/login   │    │ /api/note/:id │
-└───────┬───────┘    └───────┬───────┘    └───────┬───────┘
-        │                    │                    │
-        └────────────────────┼────────────────────┘
-                             │
-                             ▼
-                    ┌─────────────────┐
-                    │   Express.js    │
-                    │    Server       │
-                    └────────┬────────┘
-                             │
-        ┌────────────────────┼────────────────────┐
-        │                    │                    │
-        ▼                    ▼                    ▼
-┌───────────────┐    ┌───────────────┐    ┌───────────────┐
-│ Authentication│    │  Task/Note/   │    │  Passport.js  │
-│   Middleware  │    │  Todo Routes  │    │    OAuth      │
-└───────┬───────┘    └───────┬───────┘    └───────┬───────┘
-        │                    │                    │
-        └────────────────────┼────────────────────┘
-                             │
-                             ▼
-                    ┌─────────────────┐
-                    │   Controller    │
-                    └────────┬────────┘
-                             │
-                             ▼
-                    ┌─────────────────┐
-                    │    MongoDB      │
-                    │    Models       │
-                    └────────┬────────┘
-                             │
-                             ▼
-                    ┌─────────────────┐
-                    │  MongoDB Atlas  │
-                    │   Database      │
-                    └────────┬────────┘
-                             │
-                             ▼
-                    ┌─────────────────┐
-                    │   JSON Response │
-                    └────────┬────────┘
-                             │
-                             ▼
-                    ┌─────────────────┐
-                    │  Client Browser │
-                    │  (UI Updated)   │
-                    └─────────────────┘
-
 
 
 🔧 Environment Variables
