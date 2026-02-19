@@ -2,7 +2,9 @@
 
 A full-stack Task Manager application built with the MERN stack (MongoDB, Express.js, React, Node.js). Features user authentication, task management, notes, todos, and calendar integration.
 
-# 🌐 Live Demo
+---
+
+## 🌐 Live Demo
 
 The application is fully deployed and live!
 
@@ -12,51 +14,62 @@ The application is fully deployed and live!
 | **Backend API** | [https://task-manager-backend-wm5h.onrender.com](https://task-manager-backend-wm5h.onrender.com) |
 | **GitHub Repository** | [https://github.com/Mamta-gangwar/MERN-Stack-Task-Manager-App](https://github.com/Mamta-gangwar/MERN-Stack-Task-Manager-App) |
 
-[![Deployed on Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black)](https://mern-stack-task-manager-app.vercel.app)
-[![Deployed on Render](https://img.shields.io/badge/Deployed%20on-Render-blue)](https://task-manager-backend-wm5h.onrender.com)
+<p align="center">
+  <a href="https://mern-stack-task-manager-app.vercel.app">
+    <img src="https://img.shields.io/badge/Deployed%20on-Vercel-black?style=for-the-badge&logo=vercel" alt="Vercel">
+  </a>
+  <a href="https://task-manager-backend-wm5h.onrender.com">
+    <img src="https://img.shields.io/badge/Deployed%20on-Render-blue?style=for-the-badge&logo=render" alt="Render">
+  </a>
+</p>
 
-# ✨ Features
+---
 
-- ✅ **User Authentication** - Local, Google, and Facebook login
-- ✅ **Task Management** - Create, edit, delete, and track tasks
-- ✅ **Notes** - Save and organize your notes
-- ✅ **Todo Lists** - Create and manage todos
-- ✅ **Calendar View** - See your tasks and events in calendar
-- ✅ **Dark Mode** - Toggle between light and dark themes
-- ✅ **Password Reset** - Forgot password functionality with email
-- ✅ **User Profile** - View and manage your profile
+## ✨ Features
 
-# 🛠️ Tech Stack
+| Feature | Description |
+|---------|-------------|
+| ✅ **User Authentication** | Local, Google, and Facebook login with Passport.js |
+| ✅ **Task Management** | Create, edit, delete, and track your daily tasks |
+| ✅ **Notes** | Save and organize your important notes |
+| ✅ **Todo Lists** | Create and manage todos with checkboxes |
+| ✅ **Calendar View** | See all your tasks and events in an interactive calendar |
+| ✅ **Dark Mode** | Toggle between light and dark themes |
+| ✅ **Password Reset** | Forgot password functionality with email integration |
+| ✅ **User Profile** | View and manage your personal profile |
+
+---
+
+## 🛠️ Tech Stack
 
 **Frontend:**
-- React.js
-- React Router
-- CSS3
-- Deployed on Vercel
+- ⚛️ React.js
+- 🚦 React Router
+- 🎨 CSS3
+- 🚀 Deployed on Vercel
 
 **Backend:**
-- Node.js
-- Express.js
-- MongoDB Atlas
-- Passport.js (Authentication)
-- Nodemailer (Email service)
-- Deployed on Render
+- 🟢 Node.js
+- 🚂 Express.js
+- 🍃 MongoDB Atlas
+- 🔐 Passport.js (Authentication)
+- 📧 Nodemailer (Email service)
+- ⚙️ Deployed on Render
 
-# 🚀 Quick Start
+---
 
-# Visit the Live App
-**Simply go to:** [https://mern-stack-task-manager-app.vercel.app](https://mern-stack-task-manager-app.vercel.app)
-**Frontend:** [https://mern-stack-task-manager-app.vercel.app](https://mern-stack-task-manager-app.vercel.app) 
-**Backend:** [https://task-manager-backend-wm5h.onrender.com](https://task-manager-backend-wm5h.onrender.com) 
+## 🚀 Quick Start
 
+### **Visit the Live App**
+Simply go to: **[https://mern-stack-task-manager-app.vercel.app](https://mern-stack-task-manager-app.vercel.app)**
 
-- Create a new account
-- Or login with Google/Facebook
-- Start managing your tasks!
+1. Create a new account
+2. Or login with Google/Facebook
+3. Start managing your tasks!
 
-# Run Locally
+### **Run Locally**
 
-## Clone the repository
+# Clone the repository
 git clone https://github.com/Mamta-gangwar/MERN-Stack-Task-Manager-App.git
 cd MERN-Stack-Task-Manager-App
 
@@ -64,7 +77,8 @@ cd MERN-Stack-Task-Manager-App
 cd BackEnd
 npm install
 
-# Create .env file in BackEnd folder with:
+# Create .env file in BackEnd folder
+# Add these variables:
 # MONGO_URL=your_mongodb_connection_string
 # SESSION_SECRET=your_secret
 # JWT_SECRET_KEY=your_jwt_secret
@@ -78,7 +92,6 @@ cd FrontEnd
 npm install
 npm start
 
-
 ## 📸 **Screenshots**
 
 Here are some screenshots of the Task Manager application:
@@ -87,13 +100,9 @@ Here are some screenshots of the Task Manager application:
 |:--------------:|:--------------------:|:--------------:|
 | <img src="images/Login.png" width="300"> | <img src="images/Dashboard1.png" width="300"> | <img src="images/Tasks.png" width="300"> |
 
-| **Notes Page** | **Dashboard View 2** | **Features** |
-|:--------------:|:--------------------:|:------------:|
+| **Notes Page** | **Dashboard View 2** | **Login Page (Alt)** |
+|:--------------:|:--------------------:|:--------------------:|
 | <img src="images/Notes.png" width="300"> | <img src="images/Dashboard2.png" width="300"> | <img src="images/Login.png" width="300"> |
-
-> 📌 *Screenshots showcase the responsive design and features of the application*
-
-# **Project Structure**
 
 MERN-Stack-Task-Manager-App/
 ├── BackEnd/               # Node.js/Express backend
@@ -110,10 +119,11 @@ MERN-Stack-Task-Manager-App/
 │   └── package.json
 └── README.md
 
-
-# 📞 **Contact**
+📞 Contact
 Mamta Gangwar
+
 GitHub: @Mamta-gangwar
+
 Project Link: https://github.com/Mamta-gangwar/MERN-Stack-Task-Manager-App
 
-<p align="center"> Made with ❤️ by Mamta Gangwar <br> ⭐ If you found this project helpful, please give it a star! </p> 
+<p align="center"> Made with ❤️ by Mamta Gangwar <br> ⭐ If you found this project helpful, please give it a star! </p>
