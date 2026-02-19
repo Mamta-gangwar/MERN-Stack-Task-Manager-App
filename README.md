@@ -56,8 +56,7 @@ The application is fully deployed and live!
 
 # Run Locally
 
-```bash
-# Clone the repository
+## Clone the repository
 git clone https://github.com/Mamta-gangwar/MERN-Stack-Task-Manager-App.git
 cd MERN-Stack-Task-Manager-App
 
@@ -117,4 +116,4 @@ Mamta Gangwar
 GitHub: @Mamta-gangwar
 Project Link: https://github.com/Mamta-gangwar/MERN-Stack-Task-Manager-App
 
-
+<p align="center"> Made with ❤️ by Mamta Gangwar <br> ⭐ If you found this project helpful, please give it a star! </p> 
