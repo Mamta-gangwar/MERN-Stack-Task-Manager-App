@@ -82,14 +82,17 @@ npm start
 
 ## 📸 **Screenshots**
 
-| **Login Page** | **Dashboard** | **Tasks View** |
-|:--------------:|:-------------:|:--------------:|
+Here are some screenshots of the Task Manager application:
+
+| **Login Page** | **Dashboard View 1** | **Tasks View** |
+|:--------------:|:--------------------:|:--------------:|
 | <img src="images/Login.png" width="300"> | <img src="images/Dashboard1.png" width="300"> | <img src="images/Tasks.png" width="300"> |
 
-| **Notes** | **Dashboard (Alt View)** | **Additional View** |
-|:---------:|:------------------------:|:-------------------:|
+| **Notes Page** | **Dashboard View 2** | **Features** |
+|:--------------:|:--------------------:|:------------:|
 | <img src="images/Notes.png" width="300"> | <img src="images/Dashboard2.png" width="300"> | <img src="images/Login.png" width="300"> |
 
+> 📌 *Screenshots showcase the responsive design and features of the application*
 
 # **Project Structure**
 
