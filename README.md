@@ -57,24 +57,24 @@ The application is fully deployed and live!
 # Run Locally
 
 ```bash
-# Clone the repository
+## Clone the repository
 git clone https://github.com/Mamta-gangwar/MERN-Stack-Task-Manager-App.git
 cd MERN-Stack-Task-Manager-App
 
-# Install backend dependencies
+## Install backend dependencies
 cd BackEnd
 npm install
 
-# Create .env file in BackEnd folder with:
+## Create .env file in BackEnd folder with:
 # MONGO_URL=your_mongodb_connection_string
 # SESSION_SECRET=your_secret
 # JWT_SECRET_KEY=your_jwt_secret
 # FRONTEND_DOMAIN=http://localhost:3000
 
-# Start backend server
+## Start backend server
 npm start
 
-# In a new terminal, install and start frontend
+## In a new terminal, install and start frontend
 cd FrontEnd
 npm install
 npm start
@@ -94,7 +94,7 @@ Here are some screenshots of the Task Manager application:
 
 > 📌 *Screenshots showcase the responsive design and features of the application*
 
-# **Project Structure**
+## **Project Structure**
 
 MERN-Stack-Task-Manager-App/
 ├── BackEnd/               # Node.js/Express backend
@@ -112,7 +112,7 @@ MERN-Stack-Task-Manager-App/
 └── README.md
 
 
-# 📞 **Contact**
+## 📞 **Contact**
 Mamta Gangwar
 GitHub: @Mamta-gangwar
 Project Link: https://github.com/Mamta-gangwar/MERN-Stack-Task-Manager-App
