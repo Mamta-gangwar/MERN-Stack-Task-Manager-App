@@ -80,33 +80,33 @@ Simply visit: **https://mern-stack-task-manager-app.vercel.app**
 
 ### Option 2: Run Locally
 
-# 1. Clone the repository
+### 1. Clone the repository
 git clone https://github.com/Mamta-gangwar/MERN-Stack-Task-Manager-App.git
 cd MERN-Stack-Task-Manager-App
 
-# 2. Setup Backend
+### 2. Setup Backend
 cd BackEnd
 npm install
 
-# 3. Create .env file in BackEnd folder
+### 3. Create .env file in BackEnd folder
 Add these variables:
 MONGO_URL=your_mongodb_connection_string
 SESSION_SECRET=your_secret
 JWT_SECRET_KEY=your_jwt_secret
 FRONTEND_DOMAIN=http://localhost:3000
 
-# 4. Start Backend Server
+### 4. Start Backend Server
 npm start
 
-# 5. Setup Frontend (Open a new terminal)
+### 5. Setup Frontend (Open a new terminal)
 cd FrontEnd
 npm install
 
-# 6. Create .env file in FrontEnd folder
+### 6. Create .env file in FrontEnd folder
 Add this variable:
 REACT_APP_API_URL=http://localhost:8080
 
-# 7. Start Frontend Server
+### 7. Start Frontend Server
 npm start
 Access your local app:
 
@@ -115,7 +115,7 @@ Frontend: http://localhost:3000
 Backend: http://localhost:8080
 
 
-🔧 Environment Variables
+## 🔧 Environment Variables
 Backend (.env in BackEnd folder)
 
 MONGO_URL=mongodb+srv://username:password@cluster.mongodb.net/dbname
@@ -127,21 +127,21 @@ Frontend (.env in FrontEnd folder)
 REACT_APP_API_URL=http://localhost:8080
 Production Variables (on Render/Vercel)
 
-# Render (Backend)
+## Render (Backend)
 MONGO_URL=your_production_mongodb_url
 SESSION_SECRET=production_secret
 JWT_SECRET_KEY=production_jwt_secret
 FRONTEND_DOMAIN=https://mern-stack-task-manager-app.vercel.app
 
-Vercel (Frontend)
+## Vercel (Frontend)
 REACT_APP_API_URL=https://task-manager-backend-wm5h.onrender.com
 
-📞 Contact
+## 📞 Contact
 Mamta Gangwar
 
-GitHub: @Mamta-gangwar
+## GitHub: @Mamta-gangwar
 
-Project Link: https://github.com/Mamta-gangwar/MERN-Stack-Task-Manager-App
+## Project Link: https://github.com/Mamta-gangwar/MERN-Stack-Task-Manager-App
 
 ⭐ Support
 If you found this project helpful, please give it a star on GitHub!
