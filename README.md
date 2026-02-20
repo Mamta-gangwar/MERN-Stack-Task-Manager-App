@@ -127,21 +127,21 @@ Frontend (.env in FrontEnd folder)
 REACT_APP_API_URL=http://localhost:8080
 Production Variables (on Render/Vercel)
 
-## Render (Backend)
+### Render (Backend)
 MONGO_URL=your_production_mongodb_url
 SESSION_SECRET=production_secret
 JWT_SECRET_KEY=production_jwt_secret
 FRONTEND_DOMAIN=https://mern-stack-task-manager-app.vercel.app
 
-## Vercel (Frontend)
+### Vercel (Frontend)
 REACT_APP_API_URL=https://task-manager-backend-wm5h.onrender.com
 
 ## 📞 Contact
 Mamta Gangwar
 
-## GitHub: @Mamta-gangwar
+GitHub: @Mamta-gangwar
 
-## Project Link: https://github.com/Mamta-gangwar/MERN-Stack-Task-Manager-App
+Project Link: https://github.com/Mamta-gangwar/MERN-Stack-Task-Manager-App
 
 ⭐ Support
 If you found this project helpful, please give it a star on GitHub!
